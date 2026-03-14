@@ -15,7 +15,7 @@
     }
 
     header {
-      /* Replace the URL below with your own main header image */
+      /* Hintergrundbild für den Header - Du kannst hier später auch ein eigenes Bild aus dem Pics-Ordner nehmen */
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
       url('https://images.unsplash.com/photo-1517832606299-7ae9b720a186');
       background-size: cover;
@@ -84,7 +84,7 @@
     }
 
     .gallery-item {
-      aspect-ratio: 3 / 4; /* Maintains Portrait (Hochformat) Ratio */
+      aspect-ratio: 3 / 4; /* Hochformat-Verhältnis */
       background: #222;
       overflow: hidden;
       border-radius: 8px;
@@ -109,9 +109,34 @@
 
     .card {
       background: #1c1c1c;
-      padding: 30px;
+      padding: 35px;
       border-radius: 8px;
       border-left: 3px solid #c9a227;
+    }
+
+    /* Schöne goldene Bulletpoints */
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      font-weight: 300;
+    }
+
+    .card li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 12px;
+      height: 2px;
+      background-color: #c9a227;
+      border-radius: 2px;
     }
 
     footer {
@@ -165,7 +190,6 @@
     <div class="gallery-item"><img src="Pics/image4.jpeg" alt="Barber Work"></div>
     <div class="gallery-item"><img src="Pics/image5.jpeg" alt="Barber Work"></div>
     <div class="gallery-item"><img src="Pics/image6.jpeg" alt="Barber Work"></div>
-
   </div>
 </section>
 
@@ -174,7 +198,7 @@
   <div class="services">
     <div class="card">
       <h3>Herren</h3>
-      <ul style="list-style: none; padding: 0;">
+      <ul>
         <li>Herrenhaarschnitt</li>
         <li>Kinderhaarschnitt</li>
         <li>Bart trimmen & formen</li>
@@ -184,7 +208,7 @@
     </div>
     <div class="card">
       <h3>Damen</h3>
-      <ul style="list-style: none; padding: 0;">
+      <ul>
         <li>Damenhaarschnitt</li>
         <li>Färben & Strähnen</li>
         <li>Waschen · Schneiden · Föhnen</li>
@@ -210,7 +234,7 @@
   <div style="text-align:center;">
     <p>📍 Bahnhofstrasse 19, 6440 Brunnen</p>
     <p>📞 <a href="tel:0418220019">041 822 00 19</a></p>
-    <p>📲 <a href="https://www.instagram.com/reel/DGxh4eMM1zv/">Instagram</a></p>
+    <p>📲 <a href="https://www.instagram.com/reel/DGxh4eMM1zv/" target="_blank">Instagram</a></p>
   </div>
 </section>
 
